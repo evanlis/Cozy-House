@@ -1,0 +1,88 @@
+header {
+    background: white;
+}
+
+h2,
+h3,
+h4,
+p,
+.logo-title,
+.header-menu a {
+    color: #545454;
+}
+
+.header-nav {
+    margin-bottom: 30px;
+}
+
+.logo-subtitle {
+    color: #292929;
+}
+
+.pets-title {
+    font-size: 35px;
+    line-height: 130%;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px 40px;
+    padding-bottom: 45px;
+}
+
+.pets-nav {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.icon {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.two-rows img {
+    height: 23px;
+    width: 27px;
+    padding: 14px 13px 15px 12px;
+    border-radius: 100%;
+}
+
+.one-row img {
+    height: 23px;
+    width: 13px;
+    padding: 14px 20px 15px 19px;
+    border-radius: 100%;
+
+}
+
+.numb-page-icon {
+    border: 2px #F1CDB3 solid;
+    padding: 14px 22px 15px 21px;
+    border-radius: 100%;
+    background: #F1CDB3;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    color: #292929;
+}
+
+.no-active-icon img {
+    border: 2px #CDCDCD solid;
+}
+
+.active-icon img {
+    border: 2px #F1CDB3 solid;
+}
+
+@media(hover:hover) {
+    .header-menu a:hover {
+        color: #292929;
+    }
+}
