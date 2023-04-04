@@ -11,6 +11,10 @@ p,
     color: #545454;
 }
 
+.current-page a {
+    color: #292929;
+}
+
 .header-nav {
     margin-bottom: 30px;
 }
@@ -43,6 +47,11 @@ p,
 .icon {
     cursor: pointer;
     margin-right: 20px;
+    transition: background 1s ease;
+}
+
+.icon img {
+    transition: background 1s ease;
 }
 
 .two-rows img {
@@ -64,7 +73,6 @@ p,
     border: 2px #F1CDB3 solid;
     padding: 14px 22px 15px 21px;
     border-radius: 100%;
-    background: #F1CDB3;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -77,12 +85,57 @@ p,
     border: 2px #CDCDCD solid;
 }
 
+.no-active-icon {
+    cursor: default;
+}
+
 .active-icon img {
     border: 2px #F1CDB3 solid;
+    transition: background, box-shadow 1s;
 }
 
 @media(hover:hover) {
-    .header-menu a:hover {
+    .header-menu .interactiv-link a:hover {
         color: #292929;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: auto;
+        gap: 30px 40px;
+        padding-bottom: 45px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cards-container {
+        grid-template-columns: 270px;
+        grid-template-rows: auto;
+    }
+
+    .pets-title {
+        font-size: 25px;
+    }
+
+    .pets-content {
+        padding: 0 10px 0 10px;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    .active-icon-padding {
+        margin-right: 0;
+    }
+
+    .line {
+        border: 1px solid #000000;
     }
 }
