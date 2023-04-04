@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="image/x-icon" rel="shortcut icon" href="img/Title.jpg">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/burger-menu.css">
+
 </head>
 
 <body>
@@ -22,27 +25,47 @@
                     </div>
                     <nav>
                         <ul class="header-menu">
-                            <li><a href="">About the shelter</a> </li>
-                            <li><a href="pets.html">Our pets</a> </li>
-                            <li><a href="#help">Help the shelter</a> </li>
-                            <li><a href="#contacts">Contacts</a> </li>
+                            <li class="current-page"><a href="">About the shelter</a> </li>
+                            <li class="interactiv-link"><a href="pets.html">Our pets</a> </li>
+                            <li class="interactiv-link"><a href="#help">Help the shelter</a> </li>
+                            <li class="interactiv-link"><a href="#contacts">Contacts</a> </li>
                         </ul>
+                        <div class="burger-menu">
+                            <div class="line line-pedding"></div>
+                            <div class="line line-pedding"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="blure" hidden>
+                            <div class="burger">
+                                <div class="burger-menu revers-menu">
+                                    <div class="line line-pedding"></div>
+                                    <div class="line line-pedding"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <ul class="header-menu burger-links">
+                                    <li class="current-page"><a href="">About the shelter</a> </li>
+                                    <li class="interactiv-link"><a href="pets.html">Our pets</a> </li>
+                                    <li class="interactiv-link"><a href="#help">Help the shelter</a> </li>
+                                    <li class="interactiv-link"><a href="#contacts">Contacts</a> </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
 
                 <section class="start-screen">
-                    <section class="start-screen__content">
+                    <div class="start-screen__content">
                         <h1>
-                            <pre>Not only people
-need a house</pre>
+                            Not only people <br>
+                            need a house
                         </h1>
                         <p class="start-screen__subtitle">
                             We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
                             He
                             or she will love you more than anybody else in the world, you will see!
                         </p>
-                        <a href="#our-friends"><button class="start-screen__btn">Make a friend</button></a>
-                    </section>
+                        <a href="#our-friends"><button class="start-screen__btn"> Make a friend</button></a>
+                    </div>
                     <div class="start-screen__img">
                         <img src="img/index/start-screen-puppy.png" alt="">
                     </div>
@@ -58,7 +81,7 @@ need a house</pre>
                     <img src="img/index/about-pets.png" alt="">
                 </div>
                 <div class="about__info">
-                    <h2 class="title about__title">About the shelter “Cozy House”</h2>
+                    <h2 class="title about__title">About the shelter <br> “Cozy House”</h2>
                     <p class="about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that
                         only 20% of them will find a family. The others will continue to live with us and will be
                         waiting for a lucky chance to become dearly loved.</p>
@@ -73,33 +96,33 @@ need a house</pre>
 
         </div>
     </section>
-    <section class="pets">
+    <section class="our-friends">
         <div class="container">
-            <div class="pets-content padding-box">
-                <a name="our-friends"></a>
+            <div class="pets-content ">
+                <a id="our-friends"></a>
                 <h2 class="title pets-title">
-                    <pre>Our friends who
-are looking for a house</pre>
+                    Our friends who <br>
+                    are looking for a house
                 </h2>
                 <div class="pets__slider ">
                     <div class="arrows">
                         <img src="img/index/Arrow-left.svg" alt="">
                     </div>
-                    <div class="pets__card">
-                        <div class="pets__img">
+                    <div class="pets__card pedding-left flex-item">
+                        <div class="pets__img ">
                             <img src="img/index/pets-katrine.png" alt="">
                         </div>
                         <h3 class="card__title">Katrine</h3>
                         <button class="card__btn">Learn more</button>
                     </div>
-                    <div class="pets__card">
+                    <div class="pets__card telephone-hidden ">
                         <div class="pets__img">
                             <img src="img/index/pets-jennifer.png" alt="">
                         </div>
                         <h3 class="card__title">Jennifer</h3>
                         <button class="card__btn">Learn more</button>
                     </div>
-                    <div class="pets__card">
+                    <div class="pets__card hidden">
                         <div class="pets__img">
                             <img src="img/index/pets-woody.png" alt="">
                         </div>
@@ -111,42 +134,41 @@ are looking for a house</pre>
                     </div>
                 </div>
                 <a href="pets.html"><button class="pets__btn"> Get to know the rest</button></a>
-                <!-- <button class="pets__btn"> Get to know the rest</button> -->
             </div>
         </div>
     </section>
     <section class="help">
-        <a name="help"></a>
+        <a id="help"></a>
         <div class="container">
             <div class="help-content padding-box">
                 <div>
                     <h2 class="help-title title">
-                        <pre>How you can help
-our shelter</pre>
+                        How you can help <br>
+                        our shelter
                     </h2>
 
                 </div>
                 <div class="help-list">
-                    <div class="list-row1">
-                        <div class="list-card">
+                    <div class="list-row">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/Pet-food.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Pet food</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/transportation.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Transportation</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/toys.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Toys</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/bowls-and-cups.svg" alt="">
                             </div>
@@ -158,27 +180,25 @@ our shelter</pre>
                             </div>
                             <h3 class="help-list__title">Shampoos</h3>
                         </div>
-                    </div>
-                    <div class="list-row2">
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/vitamins.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Vitamins</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/medicines.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Medicines</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card padding-list-card">
                             <div class="help__img">
                                 <img src="img/index/collars-or-leashes.svg" alt="">
                             </div>
                             <h3 class="help-list__title">Collars / leashes</h3>
                         </div>
-                        <div class="list-card">
+                        <div class="list-card ">
                             <div class="help__img">
                                 <img src="img/index/sleeping-area.svg" alt="">
                             </div>
@@ -189,14 +209,14 @@ our shelter</pre>
             </div>
         </div>
     </section>
-    <section class="donation">
+    <section class="in-addition">
         <div class="container">
-            <div class="donation-content padding-box">
+            <div class="in-addition-content padding-box">
                 <div class="donation__img">
                     <img src="img/index/donation-dog.png" alt="">
                 </div>
-                <div class="donatoin-info">
-                    <h2 class="title donation__title">You can also make a donation</h2>
+                <div class="in-addition-info">
+                    <h2 class="title donation__title">You can also <br> make a donation</h2>
                     <h5 class="donation__subtitle">Name of the bank / Type of bank account</h5>
                     <div class="donation__credit-card">
                         <div class="credit-card__icon">
@@ -214,30 +234,36 @@ our shelter</pre>
         </div>
     </section>
     <footer>
-        <a name="contacts"></a>
+        <a id="contacts"></a>
         <div class="container">
             <div class="footer-content padding-box">
                 <div class="flex">
                     <div class="contacts">
                         <h2 class="title footer-title">For questions and suggestions</h2>
-                        <div class="contacts-info">
+                        <div class="contacts-info mail-padding">
                             <img src="img/index/mail.svg" alt="">
-                            email@shelter.com
+                            <a class="contacts-info" href="mailto:email@shelter.com">email@shelter.com</a>
                         </div>
-                        <div class="contacts-info">
+                        <div class="contacts-info number-padding">
                             <img src="img/index/phone.svg" alt="">
-                            +13 674 567 75 54
+                            <a class='contacts-info' href="tel:+136745677554">+13 674 567 75 54</a>
                         </div>
                     </div>
                     <div class="contacts">
                         <h2 class="title footer-title">We are waiting for your visit</h2>
                         <div class="contacts-info location">
                             <img src="img/index/pin.svg" alt="">
-                            1 Central Street, Boston (entrance from the store)
+                            <a class="contacts-info" target="_ blank"
+                                href="https://www.google.kz/maps/place/%D0%96%D0%BE%D0%BF%D1%8B,+769+01+%D0%93%D0%BE%D0%BB%D0%B5%D1%88%D0%BE%D0%B2,+%D0%A7%D0%B5%D1%85%D0%B8%D1%8F/@49.3328934,17.5748534,14z/data=!3m1!4b1!4m6!3m5!1s0x4713a0ac323a85b5:0xc3b26e85b57e46b4!8m2!3d49.3328995!4d17.6107317!16s%2Fg%2F120n7swl">1
+                                Central Street, Boston (entrance from the store)</a>
+
                         </div>
                         <div class="contacts-info">
                             <img src="img/index/pin.svg" alt="">
-                            18 South Park, London
+                            <a class="contacts-info" target="_ blank"
+                                href="https://www.google.kz/maps/place/%D0%96%D0%BE%D0%BF%D1%8B,+769+01+%D0%93%D0%BE%D0%BB%D0%B5%D1%88%D0%BE%D0%B2,+%D0%A7%D0%B5%D1%85%D0%B8%D1%8F/@49.3328934,17.5748534,14z/data=!3m1!4b1!4m6!3m5!1s0x4713a0ac323a85b5:0xc3b26e85b57e46b4!8m2!3d49.3328995!4d17.6107317!16s%2Fg%2F120n7swl">18
+                                South Park, London</a>
+
                         </div>
                     </div>
                 </div>
@@ -249,6 +275,9 @@ our shelter</pre>
         </div>
 
     </footer>
+
+    <script src="main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
